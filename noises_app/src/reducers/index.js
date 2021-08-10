@@ -1,12 +1,19 @@
 
 import {UPDATE_ANSWER} from "../actions/constants";
 
-export function questionReducer(state = [], action) {
+const initState ={
+  value : null,
+  countDown: "01:00:00"
+}
+
+export function questionReducer(state = initState, action) {
+  let newState = {...state};
+	
     switch (action.type) {
       case UPDATE_ANSWER:
-        console.log('action.text',action.value)
-        return state.concat([action.value])
+        newState['countDown'] = action.countDown
+        return newState
       default:
-        return state
+        return newState
     }
   }
