@@ -1,6 +1,6 @@
 import './App.scss';
 import AppContainer from './components/AppContainer';
-import ButtonTest from './components/ButtonTest';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import MainControl from './components/MainControl';
 
@@ -10,7 +10,7 @@ function App() {
         <Header/>
         <MainControl/>
         <AppContainer/>
-        {/* <ButtonTest/> */}
+        <Footer/>
     </div>
   );
 }

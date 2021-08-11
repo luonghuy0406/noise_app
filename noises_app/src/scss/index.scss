@@ -180,3 +180,52 @@
         }
     }
 }
+
+.app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #198159;
+    .sound-card-container{
+        margin: 1rem;
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        .icon-active{
+            box-shadow: 0px 10px 20px 2px #eeeeee1c;
+            opacity: 1 !important;
+        }
+        .sound-card-icon{
+            outline: none;
+            padding: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+           height: 8rem;
+            width: 8rem;
+            transition: all ease-in-out .3s;
+            opacity: .6;
+        }
+        .volume-control{
+            width: 80%;
+        }
+    }
+}
+
+.footer-container{
+    width: 100vw;
+    bottom: 0;
+    background: linear-gradient(to bottom left, #126646, #0c4930);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #eee;
+    font-size: .8rem;
+    border-top: 1px solid rgba(238,238,238,.2);
+    text-align: center;
+    height: 5rem;
+}
